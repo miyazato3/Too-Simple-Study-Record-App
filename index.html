@@ -6,18 +6,18 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Too Simple Record App</h1>
-        <div>
-            <ul>
-                <li><input type="radio" name="choice" value="study">勉強</li>
-                <li><input type="radio" name="choice" value="break">休憩</li>
-                <li><input type="radio" name="choice" value="meal">ご飯</li>
-            </ul>
+        <header>Too Simple Record App</header>
+        <div class="control-panel">
             <div class="stopwatch">
                 <div id="time">00:00</div>
                 <button>start</button>
                 <button>stop</button>
-                <button>追加する</button>
+                <button>記録する</button>
+            </div>
+            <div class="select">
+                <input type="radio" name="select" class="hello" value="study">勉強<br>
+                <input type="radio" name="select" class="hello" value="break">休憩<br>
+                <input type="radio" name="select" class="hello" value="meal">ご飯<br>
             </div>
         </div>
         <script type="text/javascript" src="index.js"></script>
