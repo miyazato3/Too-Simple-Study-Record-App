@@ -2,11 +2,11 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>record app</title>
+        <title>Too Simple Study Record App</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>Too Simple Record App</header>
+        <header>Too Simple Study Record App</header>
         <div class="control-panel">
             <div class="stopwatch">
                 <div id="time-area">00:00:00</div>
@@ -16,17 +16,17 @@
                 <button id="record-button">記録する</button>
             </div>
             <div class="select">
-                <input type="radio" name="select" class="hello" value="study">勉強<br>
-                <input type="radio" name="select" class="hello" value="break">休憩<br>
-                <input type="radio" name="select" class="hello" value="meal">ご飯<br>
+                <label><input type="radio" name="select" class="hello" value="study" checked>勉強<br></label>
+                <label><input type="radio" name="select" class="hello" value="break">休憩<br></label>
+                <label><input type="radio" name="select" class="hello" value="meal">ご飯<br></label>
             </div>
         </div>
         <div class="record-area">
             <p>(累計記録)</p>
             <ul>
-                <li>勉強：100分</li>
-                <li>休憩：50分</li>
-                <li>ご飯：10分</li>
+                <li id="study-record">勉強：00(h)00(m)00(s)</li>
+                <li id="break-record">休憩：00(h)00(m)00(s)</li>
+                <li id="meal-record">ご飯：00(h)00(m)00(s)</li>
             </ul>
         </div>
         <script type="text/javascript" src="index.js"></script>
